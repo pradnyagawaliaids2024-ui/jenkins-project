@@ -1,25 +1,17 @@
+pipeline {
     agent any
 
     stages {
         stage('Build') {
             steps {
-                echo 'Project Building'
+                echo 'Hello from Jenkins'
             }
         }
 
         stage('Test') {
             steps {
-                echo 'Project Testing'
-            }
-        }
-
-        stage('Deploy') {
-            steps {
-                echo 'Project Deployed Successfully'
+                echo 'Testing successful'
             }
         }
     }
 }
-
-
-
